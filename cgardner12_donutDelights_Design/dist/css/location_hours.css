@@ -1,20 +1,19 @@
 /*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
 
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+*{
+  margin: 0;
+  padding: 0;
+}
 
 html {
-  color: #222;
   font-size: 1em;
   line-height: 1.4;
+  background-color:white;
 }
 
 /*
@@ -97,7 +96,108 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* Body Styles */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  width:1366px;
+  margin: 0 auto;
+  border: 3px solid white;
+  background-color:#f5b142;
+  }
+/* Header Styles */
+header{
+  padding: 1em 0 0 0;
+  background-color: #ad3c1e;
+  border-bottom: 3px solid #422B25;
+  float:left;
+ }
+header h3{
+  font-size: 130%;
+  font-style: italic;
+  width:300px;
+}
+header img{
+  height: 90px;
+}
+a:focus, a:hover{
+  font-style: italic;
+}
 
+/* Navigation Menu Styles */
+#nav_menu ul {
+  display: flex;
+  flex-basis: 50%;
+  position:relative;
+  padding:0;
+  margin:0;
+  list-style-type: none;
+  justify-content: space-between;
+  border-top:3px solid #422B25;
+}
+#nav_menu ul li{
+  flex-basis: 50%;
+}
+#nav_menu ul li a {
+  display: block;
+  width: 309.5px;
+  text-align: center;
+  padding: 2em 1em 1em 1em;
+  text-decoration: none;
+  background-color: #ad3c1e;
+  color: white;
+  font-weight: bold;
+}
+#nav_menu ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+#nav_menu ul li ul {
+  float:none;
+}
+/* ==========================================================================
+   Main Styles
+   ==========================================================================*/
+.column {
+  float:left;
+  padding: 1em 1em;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.column img{
+  max-width:325px;
+}
+
+section{
+  text-align:center;
+}
+section h3{
+  padding:30px 0 0 0;
+}
+.column2 {
+  float:left;
+  padding: 1em 0 1em 5em;
+}
+section p{
+  width: 400px;
+  text-align: left;
+}
+.column2 img{
+  max-width:325px;
+  padding: 3em 1em 0 0;
+}
+.column3 {
+  float:left;
+  padding: 1em 0 1em 10em;
+}
+.column3 img{
+  max-width:325px;
+  padding: 3em 1em 2em 0;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
